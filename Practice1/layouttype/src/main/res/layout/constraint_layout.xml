@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="238dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="176dp"
+        android:text="Это самый главный TextView!"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
+        android:text="Это чуть менее главный TextView.."
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:textSize="20dp"
+        android:id="@+id/button10"
+        android:layout_width="275dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="131dp"
+        android:text="Эта кнопка привязана к самому главному TextView!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="292dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="156dp"
+        android:text="Эта кнопка привязана к чуть менее главному TextView!"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
